@@ -9,17 +9,17 @@ Speed = 1;
 %====================== Do not edit upper area=========================%
 %======================================================================%
 %% Operating mode
-Operation.Mode = Torque;     %Torque , Speed
+Operation.Mode = Speed;     %Torque , Speed
 
 %% Control Inputs
 ControlInputs.Speed = 1000;                    % Speed refrence [rev/min]
 ControlInputs.Torque = 100;                  % Torque refrence [Nm]
 ControlInputs.LoadSpeed = 100;               % Load machine speed refrence [rev/min]
 ControlInputs.SwitchingFrequency = 10e3;    % Switching frequency [Hz]
-
+ControlInputs.Tload = 5;
 %% Motor and Inverter Ratings
 Power=3336;               % Power[W]
-Va_rated=140;             % Rated Voltage [V]
+Va_rated=120;             % Rated Voltage [V]
 Ia_rated=25;              % Rated Current [A]
 Wm_rated=3000*2*pi/60;    % Rated Angular Velocity[rad/s]
 Te_rated=Power/Wm_rated;  % Rated Torque [Nm]
@@ -47,4 +47,4 @@ Ksa=1/Ksp;                % Anti-windup gain
 Te_limit=Te_rated;
 Ia_limit=Ia_rated;
 
-Vdc=140;
+Vdc=200;
