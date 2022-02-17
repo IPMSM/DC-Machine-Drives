@@ -12,9 +12,9 @@ Speed = 1;
 Operation.Mode = Torque;     %Torque , Speed
 
 %% Control Inputs
-ControlInputs.Speed = 10;                    % Speed refrence [rev/min]
-ControlInputs.Torque = 10;                  % Torque refrence [Nm]
-ControlInputs.LoadSpeed = 10;               % Load machine speed refrence [rev/min]
+ControlInputs.Speed = 1000;                    % Speed refrence [rev/min]
+ControlInputs.Torque = 100;                  % Torque refrence [Nm]
+ControlInputs.LoadSpeed = 100;               % Load machine speed refrence [rev/min]
 ControlInputs.SwitchingFrequency = 10e3;    % Switching frequency [Hz]
 
 %% Motor and Inverter Ratings
